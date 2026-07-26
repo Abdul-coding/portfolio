@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #ffb454;
+  color: #0a0f1a;
+}
+
+/* Custom scrollbar to match the terminal/system feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0f1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #22304a;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2e4160;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.visible-focus:focus-visible {
+  outline: 2px solid #ffb454;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Background network: dashed flowing edges + pulsing nodes */
+.bg-network svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes pulse-node {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -48;
+  }
+}
+
+.bg-network .node {
+  animation: pulse-node 3.6s ease-in-out infinite;
+}
+
+.bg-network .node:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.bg-network .node:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.bg-network .node:nth-child(4) {
+  animation-delay: 1.3s;
+}
+
+.bg-network .flow {
+  stroke-dasharray: 6 10;
+  animation: dash-flow 2.4s linear infinite;
+}
