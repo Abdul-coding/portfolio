@@ -12,23 +12,23 @@ body {
 }
 
 ::selection {
-  background: #ffb454;
-  color: #0a0f1a;
+  background: #d97706;
+  color: #f3f6fa;
 }
 
-/* Custom scrollbar to match the terminal/system feel */
+/* Custom scrollbar to match the light systems feel */
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0f1a;
+  background: #f3f6fa;
 }
 ::-webkit-scrollbar-thumb {
-  background: #22304a;
+  background: #c3cedc;
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2e4160;
+  background: #a8b6c9;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -43,7 +43,7 @@ body {
 }
 
 .visible-focus:focus-visible {
-  outline: 2px solid #ffb454;
+  outline: 2px solid #d97706;
   outline-offset: 3px;
   border-radius: 2px;
 }

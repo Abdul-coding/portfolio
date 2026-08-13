@@ -4,17 +4,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#0A0F1A",
-        panel: "#111826",
-        panel2: "#0D1420",
-        hairline: "#22304A",
-        hairline2: "#1A2436",
-        fg: "#EDF1F7",
-        muted: "#8592A6",
-        dim: "#5B6A82",
-        signal: "#FFB454",
-        stream: "#5EEAD4",
-        danger: "#FF6B6B",
+        // Two light page shades
+        ink: "#F3F6FA", // primary light (cool mist)
+        panel: "#E4EBF4", // secondary light (soft slate)
+        panel2: "#D8E1ED", // nested surfaces
+        hairline: "#C3CEDC",
+        hairline2: "#A8B6C9",
+        fg: "#0F1B2D",
+        muted: "#4F6078",
+        dim: "#7A8BA0",
+        signal: "#D97706",
+        stream: "#0F766E",
+        danger: "#DC2626",
       },
       fontFamily: {
         display: ["'Space Grotesk'", "sans-serif"],
@@ -22,7 +23,9 @@ export default {
         body: ["'Inter'", "sans-serif"],
       },
       backgroundImage: {
-        grid: "linear-gradient(rgba(237,241,247,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(237,241,247,0.035) 1px, transparent 1px)",
+        grid: "linear-gradient(rgba(15,27,45,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(15,27,45,0.045) 1px, transparent 1px)",
+        "page-wash":
+          "linear-gradient(165deg, #F3F6FA 0%, #F3F6FA 42%, #E4EBF4 42%, #E4EBF4 100%)",
       },
       backgroundSize: {
         grid: "36px 36px",

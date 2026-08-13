@@ -30,7 +30,7 @@ export default function TracePanel() {
 
   return (
     <div
-      className="relative rounded-lg border border-hairline bg-panel/80 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] overflow-hidden"
+      className="relative rounded-lg border border-hairline bg-panel shadow-[0_8px_30px_rgba(15,27,45,0.06)] overflow-hidden"
       role="img"
       aria-label="Animated diagram of a cached request: client request, redis lookup, single-flight lock, batched database fetch, cache pre-warm, response."
     >

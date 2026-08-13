@@ -13,7 +13,7 @@ export default function Projects() {
           return (
             <div
               key={p.name}
-              className="rounded-lg border border-hairline bg-panel/60 overflow-hidden transition-colors hover:border-hairline2"
+              className="rounded-lg border border-hairline bg-panel overflow-hidden transition-colors hover:border-hairline2"
             >
               <button
                 onClick={() => setOpen(isOpen ? null : p.name)}

@@ -2,7 +2,7 @@ import { useLatestResume } from "../hooks/useLatestResume";
 
 const styles = {
   primary:
-    "inline-flex items-center gap-2 bg-signal text-ink font-mono text-sm font-medium px-5 py-3 rounded hover:bg-[#ffc576] transition-colors visible-focus",
+    "inline-flex items-center gap-2 bg-signal text-fg font-mono text-sm font-medium px-5 py-3 rounded hover:bg-[#e89b2d] transition-colors visible-focus",
   ghost:
     "inline-flex items-center gap-2 border border-hairline text-fg font-mono text-sm px-5 py-3 rounded hover:border-stream hover:text-stream transition-colors visible-focus",
   nav: "hidden md:inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest border border-hairline px-3 py-2 rounded hover:border-signal hover:text-signal transition-colors visible-focus",

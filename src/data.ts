@@ -17,14 +17,14 @@ export function experienceYearsLabel(asOf: Date = new Date()): string {
 
 export const profile = {
   name: "Abdul Rahman",
-  role: "Backend Software Engineer",
+  role: "Senior Software Engineer",
   phone: "+91 8175844802",
   email: "abdul786rahman49@gmail.com",
   location: "Noida, India",
   linkedin: "https://www.linkedin.com/in/abdulrahman2468/",
   github: "https://github.com/Abdul-coding",
   resumeFile: "/Abdul_Resume_Node.pdf",
-  summary: `Backend engineer with ${experienceYearsLabel()} years building production-grade, cloud-native systems in Node.js and TypeScript. I spend most of my time where latency, concurrency, and correctness intersect — caching strategy, event-driven architecture, and multi-tenant platform design — for systems that carry millions of end users.`,
+  summary: `Senior software engineer with ${experienceYearsLabel()} years building production-grade, cloud-native systems in Node.js and TypeScript. I spend most of my time where latency, concurrency, and correctness intersect — caching strategy, event-driven architecture, and multi-tenant platform design — for systems that carry millions of end users.`,
 };
 
 export const metrics = [
@@ -46,7 +46,7 @@ export const traceSteps = [
 export const experience = [
   {
     company: "Appinventiv Technologies Pvt. Ltd.",
-    role: "Software Engineer",
+    role: "Senior Software Engineer",
     period: "June 2023 — Present",
     bullets: [
       "Fixed slow page loads across portfolio, dashboard, and market-intelligence screens by architecting Redis-backed caching and pre-warming, and parallelizing independent I/O — turning sequential round-trips into concurrent execution.",

@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-14 items-start">
           <div className="animate-rise">
             <p className="font-mono text-xs tracking-widest text-stream mb-5">
-              backend engineer · node.js / typescript
+              {profile.role.toLowerCase()} · node.js / typescript
             </p>
             <div className="flex items-center justify-between gap-6 mb-6">
               <h1 className="font-display text-4xl sm:text-6xl leading-[1.05] font-medium text-fg min-w-0">
@@ -24,7 +24,7 @@ export default function Hero() {
                 alt={profile.name}
                 width={128}
                 height={128}
-                className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover shrink-0 border-2 border-stream shadow-[0_0_28px_rgba(94,234,212,0.4)]"
+                className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover shrink-0 border-2 border-stream shadow-[0_0_24px_rgba(15,118,110,0.25)]"
               />
             </div>
             <p className="text-muted text-base sm:text-lg max-w-xl leading-relaxed mb-9">
@@ -33,7 +33,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-4">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 bg-signal text-ink font-mono text-sm font-medium px-5 py-3 rounded hover:bg-[#ffc576] transition-colors visible-focus"
+                className="inline-flex items-center gap-2 bg-signal text-fg font-mono text-sm font-medium px-5 py-3 rounded hover:bg-[#e89b2d] transition-colors visible-focus"
               >
                 view key projects
               </a>

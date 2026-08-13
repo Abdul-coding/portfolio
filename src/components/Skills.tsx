@@ -12,7 +12,7 @@ export default function Skills() {
               {g.items.map((item) => (
                 <span
                   key={item}
-                  className="text-sm text-muted border border-hairline rounded px-2.5 py-1 hover:border-signal hover:text-fg transition-colors"
+                  className="text-sm text-muted bg-ink border border-hairline rounded px-2.5 py-1 hover:border-signal hover:text-fg transition-colors"
                 >
                   {item}
                 </span>

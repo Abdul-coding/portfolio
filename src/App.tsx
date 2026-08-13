@@ -15,12 +15,18 @@ export default function App() {
         <Nav />
         <main>
           <Hero />
-          <Experience />
+          <div className="bg-panel border-y border-hairline">
+            <Experience />
+          </div>
           <Projects />
-          <Skills />
+          <div className="bg-panel border-y border-hairline">
+            <Skills />
+          </div>
           <Education />
         </main>
-        <Contact />
+        <div className="bg-panel">
+          <Contact />
+        </div>
       </div>
     </div>
   );
